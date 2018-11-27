@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+fieldset{
+    display: block;
+    width: 500px;
+}
+label{
+    display: block;
+}
+
+label.textarea #textarea1
+{
+    width: 200px;
+    height: 100px;
+    min-height: 70px;
+    max-height: 150px;
+    min-width: 70px;
+    max-width: 250px;
+    background: #ffff48;
+}
+label.textarea #textarea2
+{
+    width: 200px;
+    height: 100px;
+    min-height: 70px;
+    max-height: 150px;
+    min-width: 70px;
+    max-width: 250px;
+    background: #ff0078;
+    resize: none;
+}
+label#labeltop{
+    margin-top: 10%;
+}
+body {
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+label.textarea #textarea3 {
+    width: 220px;
+    height: 90px;
+    background: #ffff80;
+    max-height: 90px;
+    min-height: 90px;
+}
+label.textarea #textarea4 {
+    width: 220px;
+    height: 90px;
+    background: #ffff80;
+    max-width: 220px;
+    min-width: 220px;
+}
+div#div1{
+    font-family: 'Black Han Sans', sans-serif;
+    color: red;
+    font-size:50px;
+
+}

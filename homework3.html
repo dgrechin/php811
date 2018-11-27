@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-<form>
+<div id="div1">Решение Задач</div>
+<label id="labeltop">
     <input placeholder="Плейсхолдер">
     <br>
     <br>
@@ -26,6 +27,8 @@
     <br>
     <br>
     <button>Кнопка button</button>
+</label>
+<form>
     <br>
     <br>
     <br>
@@ -34,10 +37,12 @@
     <br>
     <br>
     <input type="submit" value="Отправить на сервер">
+</form>
     <br>
     <br>
     <br>
     <br>
+<form>
     <label CLASS="checkbox"><input type="checkbox">Это метка для чекбокса: нажмите на меня - чекбокс сменит галочку!
     </label>
     <br>
@@ -47,8 +52,95 @@
     <br>
     <br>
     Это группа радиокнопок - только одна из них может быть отмечена!
+    <br>
+    <br>
+    <label class="checkbox"><input type="radio">Это метка для радио </label>
+    <br>
+    <br>
+    <label class="checkbox"><input type="radio">Это метка для радио </label>
+    <br>
+    <br>
+    <input type="submit" value="Отправить на сервер">
+    <input type="reset">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label>
+        <select>
+            <option>Нью-Йорк</option>
+            <option>Минск </option>
+            <option>Копенгаген </option>
+            <option>Москва </option>
+            <option>Киев </option>
+            <option>Стокгольм </option>
+            <option selected>Лондон </option>
+        </select>
+        <select size="3">
+            <option>Нью-Йорк</option>
+            <option selected>Минск </option>
+            <option>Копенгаген </option>
+            <option>Москва </option>
+            <option>Киев </option>
+            <option>Стокгольм </option>
+            <option >Лондон </option>
+        </select>
+        <select size="5">
+            <option>Нью-Йорк</option>
+            <option selected>Минск </option>
+            <option>Копенгаген </option>
+            <option>Москва </option>
+            <option>Киев </option>
+            <option>Стокгольм </option>
+            <option >Лондон </option>
+            <option >Стамбул </option>
+            <option >Рим </option>
+        </select>
+        <input type="submit" value="Отправить на сервер">
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
 
-
+    <form>
+    <input type="file">
+        <input type="submit" value="Отравить на сервер">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+<fieldset>
+    <legend> Выберите кнопочку</legend>
+    <label><input type="radio" name="radio 1">1в. </label>
+    <label><input type="radio" name="radio 2">2в. </label>
+    <label><input type="radio" name="radio 3">3в. </label>
+    <input type="text" placeholder="Ваше имя">
+    <label> Выберите ваше имя</label>
+</fieldset>
+<br>
+    <fieldset>
+        <legend> Пожалуйста, выбирите еще что-то</legend>
+        <label><input type="radio" name="radio 1">й </label>
+        <label><input type="radio" name="radio 2">ц. </label>
+        <label><input type="radio" name="radio 3" disabled>у </label>
+        <label><input type="radio" name="radio 4" disabled>к </label>
+        <input type="submit">
+    </fieldset>
 </form>
+<br>
+<br>
+<br>
+<br>
+    <form>
+        <label class="textarea">
+            <textarea id="textarea1" >Ограничена высота и широта</textarea><br><br><br>
+            <textarea id="textarea2"> </textarea><br><br><br>
+            <textarea id="textarea3"> </textarea><br><br><br>
+            <textarea id="textarea4"> </textarea><br><br><br>
+        </label>
+    </form>
 </body>
 </html>
