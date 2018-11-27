@@ -31,9 +31,9 @@ label.textarea #textarea2
 }
 label#labeltop{
     margin-top: 10%;
+
 }
 body {
-
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     margin-left: 35%;
@@ -53,9 +53,14 @@ label.textarea #textarea4 {
     max-width: 220px;
     min-width: 220px;
 }
-div#div1{
+div#div1 {
     font-family: 'Black Han Sans', sans-serif;
     color: red;
-    font-size:50px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-style: italic;
 
+}
+input#button1,button{
+    width:300px;
 }
