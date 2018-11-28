@@ -1,46 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+TC|Playfair+Display');
 body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-
-}
-input, button{
-    font-size: 100%;
-    color: blue;
-    background-color: aqua;
-}
-label{
     display: block;
-    width: 300px;
-    position: relative;
-    line-height: 2em;
-    font-weight: bold;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 40px;
+
+}
+ol{
+    display: block;
+    margin-left:500px;
+    width: 150px;
+}
+b{
+    color: red;
+}
+i{
+    color: blue;
+
+}
+h2{
+    margin-left:435px;
+    color: green;
+}
+b#b1{
+    color: red;
+
+}
+div#text1{
+    display: block;
+    margin-left: 435px;
+    width: 800px;
+}
+ul{
+    display: block;
     font-style: italic;
-    color: #ff0000;
-}
-label input,
-label select,
-label textarea{
-    position: absolute;
-    left: 160px;
-    top: 5px;
-
-
-}
-label.checkbox {
-    padding-left: 156px;
-<!--   -->
-}
-label.checkbox input{
-    position: static;
-}
-label.textarea{
-    height: 4em;
-}
-label.textarea textarea{
-    width: 300px;
-    height: 3em;
-    resize: none;
-
+    color: #ff0078;
 }
