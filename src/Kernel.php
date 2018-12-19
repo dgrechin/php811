@@ -14,18 +14,15 @@ class Kernel
 
     public function run()
     {
-        $mailer= new Mailer();
-        $mailer->send('test@test.com');
 
-        $database = new DataBase();
-        $files = new file();
-
-        $databaseSaver = new saver($database);
-        $filesSaver = new saver($files);
-
-        $databaseSaver-> doIt();
-        $filesSaver ->  doIt();
+        if(empty($_COOKIE['visits'])){
+            $_COOKIE['visits']=0;
+        }
+        $_COOKIE['visits']++;
+        setcookie('visits' ,$_COOKIE['visits'] ,strtotime('+ day'));
+        echo 'Вы открыли страницу :' . $_COOKIE['visits'].' раз' ;
     }
-
-
 }
+
+
+
