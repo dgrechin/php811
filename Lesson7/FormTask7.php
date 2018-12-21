@@ -3,16 +3,22 @@
 header('Content-Type: text/plain; charset=utf-8');
 class FormTask7
 {
-    protected $open = '<form method="POST">' . "\n";
-    protected $input = '<input type="text" placeholder="Ваше имя" name="name"><br>' . "\n";
-    protected $password = '<input type="password" placeholder="password" name="password"><br>' . "\n";
-    protected $submit = '<input type="submit" name="submit">' . "\n";
-    protected $textarea = '<textarea placeholder="123" name="textarea"></textarea><br>' . "\n";
-    protected $close = '</form>';
+    private $open ;
+    private $input ;
+    private $password;
+    private $submit;
+    private $textarea;
+    private $close = '';
+
 
     public function getOpen(): string
     {
         return $this->open;
+    }
+
+    public function setOpen(string $open): void
+    {
+        $this->open = $open;
     }
 
     public function getInput(): string
@@ -20,9 +26,19 @@ class FormTask7
         return $this->input;
     }
 
+    public function setInput(string $input): void
+    {
+        $this->input = $input;
+    }
+
     public function getPassword(): string
     {
         return $this->password;
+    }
+
+    public function setPassword(string $password): void
+    {
+        $this->password = $password;
     }
 
     public function getSubmit(): string
@@ -30,9 +46,19 @@ class FormTask7
         return $this->submit;
     }
 
+    public function setSubmit(string $submit): void
+    {
+        $this->submit = $submit;
+    }
+
     public function getTextarea(): string
     {
         return $this->textarea;
+    }
+
+    public function setTextarea(string $textarea): void
+    {
+        $this->textarea = $textarea;
     }
 
     public function getClose(): string
@@ -40,18 +66,18 @@ class FormTask7
         return $this->close;
     }
 
-public function require(): self
-{
-    $form=new FormTask7();
-    echo $form->getOpen();
-    echo $form->getInput();
-    echo $form->getPassword();
-    echo $form->getTextarea();
-    echo $form->getSubmit();
-    echo $form->getClose();
+    public function setClose(string $close): void
+    {
+        $this->close = $close;
+    }
 
-}
 
 }
 $form=new FormTask7();
-echo $form->require();
+$form->setOpen('method="POST"');
+$form->setInput('');
+$form->setPassword('type="password" placeholder="password" name="password"');
+$form->setSubmit('type="submit" name="submit"');
+$form->setTextarea('placeholder="123" name="textarea"');
+$form->setClose('');
+
