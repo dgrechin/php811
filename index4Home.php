@@ -1,30 +1,15 @@
 <?php
 
-
-require_once __DIR__ . '/vendor/autoload.php';
-
-use App\service\Mailer;
-use App\service\saver;
-use App\storage\DataBase;
-use App\storage\file;
-
-
-
-
-
-
-
-class testSession
-{
-
-    public function runTest()
-    {
         session_start();
-        echo "Введите Вашу страну : " .'<input type="text">';
+        //session_destroy();
+        $_SESSION ['country']=$_REQUEST['country'];
 
-    }
-}
+?>
 
-
-
+Введите Вашу страну :
+<form method="GET">
+<input name="country">
+<input type="submit">
+<a href="test.php" >Ваша страна :<? echo $_SESSION ['country']; ?></a>
+</form>
 
